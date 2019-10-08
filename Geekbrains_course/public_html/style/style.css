@@ -1,0 +1,79 @@
+.main_menu {
+	list-style-type: none;
+        text-align: left;
+        text-transform: uppercase;
+        padding: 0;
+       
+}
+.main_menu li {    
+    display: inline;
+    margin-right: 20px;
+}
+.main_menu li a {
+    text-decoration: none;   
+    font-family: Helvetica;    
+    font-weight: bold;
+}
+body {
+    font-family: Helvetica;
+    background-color: #f8f8f8;
+    
+}
+body br{
+    margin: 10px;
+}
+.body_product {
+   font-family: Helvetica;  
+}
+.body_product h1, h2, h3 {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+     
+}
+.Short_product_description {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+.Long_product_description {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+.Product_characters {    
+    font-style: oblique;   
+}
+.Product_characters li{
+    font-size: 20px;
+    margin: 10px;
+    list-style-image: url(../img/Cat_paw.png);      
+}
+.Feedback_form
+{
+    padding: 20px;   
+    width: 300px;
+}
+.Feedback_form br {
+    padding: 20px;
+    font-size: 25px;
+}
+#Feedback_form_email {
+    height: 25px;
+    font-size: 20px;
+    color: blueviolet;
+    font-family: Times new roman;
+    width: 500px;
+    
+}
+#Feedback_form_name {
+    height: 25px;
+    font-size: 20px;
+    color: green;
+    font-family: arial;
+    width: 500px;
+}

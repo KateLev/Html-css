@@ -9,9 +9,10 @@ and open the template in the editor.
         <title>Контакты</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style/style.css">
     </head>
     <body>
-          <ul class="menu">
+          <ul class="main_menu">
              <li><a href="Index.html">Главная</a></li>
              <li><a href="Catalog.html">Каталог</a></li>
              <li><a href="Contacts.html">Контакты</a></li>
@@ -20,26 +21,23 @@ and open the template in the editor.
         <hr>
         
         <h1>Контакты</h1>
-        <b>Напишите нам</b><br>
+        
         <img src="img/Cat_from_Shrek.jpg" alt="Say me something, please">
         <form action="">
-            <fieldset>
-                <legend>Форма обратной связи</legend>
+            <fieldset class="Feedback_form">
+                <legend><b>Напишите нам, пожалуйста!</b></legend>              
+                Представьтесь, пожалуйста <input id="Feedback_form_name" type="text" placeholder="Ваше имя"><br>
+                Электронная почта <input id="Feedback_form_email" type="text" placeholder="e-mail"><br><br>
+                Ваше отношение к котикам:<br>
+                Хорошее <input type="radio" name="relation"><br>
+                Отличное <input type="radio" name="relation"><br>
+                Я сам котик! <input type="radio" name="relation" checked><br>
                 
-        Представьтесь, пожалуйста <input type="text" placeholder="Ваше имя"><br>
-        Электронная почта <input type="text" placeholder="e-mail"><br>
-        Ваше отношение к котикам<br>
-        Хорошее <input type="radio" name="relation"><br>
-        Отличное <input type="radio" name="relation"><br>
-        Я сам котик! <input type="radio" name="relation" checked><br>
-        <br>
-        <input type="submit" value="Отправить"> <input type="reset" value="Сбросить" >    
-            
-            
+                <input type="submit" value="Отправить"> <input type="reset" value="Сбросить" >              
             </fieldset>
         </form>          
         <br>
-        <b>Мы находимся по адресу:</b><br>
+        <b>Мы находимся по адресу:</b>
         Рио-де-Жанейро, Кремль <br><br>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2754.0160939691573!2d48.02986331591835!3d46.349224979121345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41a9057ff4b19df3%3A0x7884871d0c7fd76!2sAstrakhan%20Kremlin!5e0!3m2!1sen!2sru!4v1569943216496!5m2!1sen!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         <hr>
