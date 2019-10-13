@@ -1,0 +1,154 @@
+.main_menu {
+	list-style-type: none;
+        
+        text-transform: uppercase;
+        padding: 0;
+        text-align: left;
+       
+}
+.main_menu li {    
+    display: inline;
+    margin-right: 20px;
+    
+}
+.main_menu li a {
+    text-decoration: none;   
+    font-family: Helvetica;    
+    font-weight: bold;
+}
+.main_menu li a:hover {
+    color:grey;
+}
+header {
+  background-color: #ffffff;
+  text-align: right;
+}
+header:before {
+  content: "The cat is fine too";     
+  font-style: italic;
+}
+footer {
+    background-color: #ffffff;
+    text-align: center;
+}
+body {
+    font-family: Helvetica;
+    background-color: #f8f8f8;
+    
+    
+}
+body br{
+    margin: 10px;
+}
+.body_product {
+   font-family: Helvetica;  
+}
+.body_product p:first-letter{
+    font-size:2em;
+    color: Brown;
+    font-style: italic;
+}
+.body_product h1, h2, h3 {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+     
+}
+/*
+.Short_product_description {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;    
+}
+
+/*.Long_product_description {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+*/
+
+.Product_characters {    
+    font-style: oblique;   
+}
+
+
+
+.Product_characters li{
+    font-size: 20px;
+    margin: 10px;
+    list-style-image: url(../img/Cat_paw.png);      
+}
+.Feedback_form
+{
+    padding: 20px;   
+    width: 300px;
+}
+.Feedback_form br {
+    padding: 20px;
+    font-size: 25px;
+}
+
+#Feedback_form_email:focus {
+    background-color: #eaeaea;
+    color: #484343;
+    
+}
+
+#Feedback_form_name:focus {
+    background-color: #eaeaea;
+    color: #484343;    
+}
+
+#Feedback_form_name {
+    height: 25px;
+    font-size: 20px;
+    color: black;
+    font-family: arial;
+    width: 500px;
+}
+
+#Feedback_form_email {
+    height: 25px;
+    font-size: 20px;
+    color: black;
+    font-family: arial;
+    width: 500px;    
+}
+input {
+    text-transform: capitalize;  
+}
+.for_border_image {
+    outline-color:black;
+    outline-width: 10px;
+    padding: 10px;
+    outline: 1px solid #666;
+
+}
+.for_border_image:hover {
+    
+    outline-width: 10px;
+    padding: 10px;
+    outline: 1px solid transparent;
+}
+table, td {
+    border:1px solid #666;
+    padding:10px;
+    text-align: center;
+}
+table {
+    background-color: #eaeaea;
+}
+td{
+    background-color:white;
+    
+}
+.More_height {
+    width:150px;
+    height:150px;
+}
+
