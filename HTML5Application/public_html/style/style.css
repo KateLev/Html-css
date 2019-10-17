@@ -1,35 +1,54 @@
 .main_menu {
-	list-style-type: none;
-        
-        text-transform: uppercase;
-        padding: 0;
-        text-align: left;
+	list-style-type: none;        
+        text-transform: uppercase;         
+        padding-top:170px;
+       
+        float:right;
        
 }
 .main_menu li {    
     display: inline;
-    margin-right: 20px;
+    padding: 20px;    
+    text-align: center;
+    background-color: #FFE4B5; 
+    border: 1px solid black;
     
 }
+
 .main_menu li a {
     text-decoration: none;   
     font-family: Helvetica;    
     font-weight: bold;
+    padding: 20px;   
+    
+    
 }
-.main_menu li a:hover {
-    color:grey;
+.main_menu li:hover {
+    background-color: #F8F8FF;     
+    
 }
 header {
-  background-color: #ffffff;
-  text-align: right;
+  background-color: #ffffff;    
+  height: 250px;
 }
+/*
 header:before {
   content: "The cat is fine too";     
   font-style: italic;
+  font-color: #F8F8FF;
 }
+*/
+.Logo {    
+    float:left;
+    padding: 10px 0 0 10px;
+    overflow: hidden;
+ }
+
 footer {
     background-color: #ffffff;
-    text-align: center;
+    text-align: right;
+    padding: 20px 20px 0 0;
+    height:80px;
 }
 body {
     font-family: Helvetica;
@@ -51,8 +70,7 @@ body br{
 .body_product h1, h2, h3 {
     color: black;
     font-size: 18px;
-    font-weight: 400;
-    background-color: #eaeaea;
+
      
 }
 /*
@@ -152,3 +170,70 @@ td{
     height:150px;
 }
 
+.katalog_img_description{
+    
+    height: 280px;
+    margin-bottom: 30px;
+}
+.katalog_img_description img {
+    float: left;
+}
+
+.Buy_button {
+    margin-left: 300px; 
+    overflow: hidden;
+    
+    
+}
+.Buy_button:hover{
+    cursor: pointer;
+}
+.Buy_button:active{
+    margin-top: 5px;
+    
+}
+.katalog_img_description p
+{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    overflow: hidden;
+    text-align: center;
+}
+h3{
+    clear: both;
+}
+
+
+.Map iframe {
+    width:100%;
+    height: 374px;
+}
+.Catalog_gallery
+{    
+    height:300px;
+    
+}
+.Product_gallery {
+    float:left;
+    display:inline;
+    margin:20px;
+    text-align: center;
+    border: 5px solid #FFE4B5;
+    padding: 5px;
+  
+}
+.Product_gallery a
+{
+    text-decoration: none;
+    
+}
+.Product_gallery:hover {
+    border: 5px solid transparent;
+}
+.Container
+{
+    width: 100%;    
+    margin: auto;    
+}
