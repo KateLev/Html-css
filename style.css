@@ -8,78 +8,150 @@
    clear: both;
 }
 body {   
-    font-family: 'Montserrat', sans-serif;  
-    
+    font-family: 'Montserrat', sans-serif;     
+}
+.my_container {
+    margin:0 auto;    
+    /* Style for "home-page" */
+width: 1366px;
+
 }
 .slider {
-    background-image: url("img/slider-img.jpg");
+    background-image: url(../img/slider-img.jpg);
     background-color: #f0f0f0;
     width: 1366px;
     height: 800px;    
+    position:relative;
     
 }
 .header {
     padding-left: 98px;
-    padding-top: 63px;
+    padding-top: 67px;
 }
 .menu {
     float:right;    
-    list-style: none;
+    list-style: none;    
+    
 }
 .menu-list {
     display:inline-block;
+    padding: 4px 0 9px 0;
+    text-align: center;    
+}
+.pagination {
+    /* Style for "navi" */
+width: 120px;
+height: 40px;
+position:absolute;
+margin-top: 650px;
+margin-left:663px;
+
+}
+.pagination-1 {
+    /* Style for "navi" */
+width: 120px;
+height: 40px;
+position:absolute;
+margin-top: 740px;
+margin-left:663px;
+
+}
+.pagination-ul{
+    list-style: none;
+}
+.pagination-li {
+    display: inline;
+    width: 40px;
+height: 40px;
+}
+.pagination-active
+{
+    /* Style for "active" */
+width: 40px;
+height: 40px;
+border-radius: 20px;
+background-color: #212121;
+}
+.pagination-a {
+    width:30px;
+    height:30px;
+    background-color: black;
+    display:inline-block;
+    border-radius: 50%;
+    background-color: #c7c7c7;
+}
+.pagination-a-active {
+    width:40px;
+    height:40px;
+    background-color:#212121;
 }
 .menu-link {
     text-decoration: none; 
     color: #8c8c8c;
     font-size: 14px;
-    font-weight: 300;
-    line-height: 48px;
-    text-transform: uppercase;
-    font-family: "Montserrat Light";
+    font-weight: 300;    
+    text-transform: uppercase;    
     letter-spacing: 1.4px;
+    padding-right:21px; 
+    
+}
+.menu-link:hover {
+    border-bottom: 3px solid #212121;
+    padding-bottom: 10px;
+    color: #212121;
+    font-weight: 700;
 }
 .menu_active {
     color: #212121;
     font-weight: 700;
-    letter-spacing: 1.4px;
     border-bottom: 3px solid #212121;
+    padding: 4px 10px 9px 10px;
+    margin-right: 11px;
+    /* Style for "active" */
+width: 74px;
+
+  
+}
+.menu-search {
+    float:right;
+    margin-right:167px;
+    margin-top:4px;
 }
 .slider-text {
     float:left;
-}
-.slider-trending {
+    padding-top: 270px;
     
-    padding-top: 296px;
-    padding-left: 98px;
+}
+.slider-trending {   
     color: #43a047;
     font-size: 18px;
     font-weight: 700;
-    line-height: 48px;
+   padding-left: 98px;
     text-transform: uppercase;    
     letter-spacing: 1.8px;
 }
 .slider-h2 {   
-   padding-left:106px;
-   padding-top:35px;
+    padding-left: 102px;
+  
+   padding-top:10px;
    color: #212121;
-   font-family: "Montserrat - Thin";
    font-size: 62px;
-   font-weight: 400;
-   line-height: 72px;
+   font-weight: 100;   
    text-transform: uppercase;
+   
 }
 .slider-content {   
 
-    
     padding-left: 98px;
-    padding-top:77px;
+    width: 458px;
+    height: 38px;    
+    padding-top:14px;
     color: #6c6c6c;
     font-size: 14px;
-    font-weight: 300;
-    line-height: 24px;
-    max-height: 38px;
-    width: 458px;
+    font-weight: 300; 
+    overflow:hidden;
+    line-height: 20px;
+    
 }
 .button {
     padding-top:70px;
@@ -89,6 +161,7 @@ body {
 
 
 .Featured-block {
+    
     width: 270px;
     height: 270px;
     border: 1px solid #9c9c9c;
@@ -152,12 +225,594 @@ letter-spacing: 3.6px;
     width: 1170px;
     height: 270px;
     display:inline-block;
+    position:relative;
+    margin-top:50px;
     
 }
 .product-1,.product-2,.product-3 {
     float:left;
     margin-right: 30px;
 }
-.product-1 {
+
+.product-content-hover {    
+    width: 270px;
+    height: 270px;
+    float:left;
+    position:absolute;
+    background-color: #ffffff;
+    opacity: 0.9;
+    outline: 1px solid #9c9c9c;
+}
+
+
+.icon-hover_back{
+    /* Style for "back" */
+width: 48px;
+height: 48px;
+box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+border-radius: 24px;
+background-color: #ffffff;
+margin:62px auto 0 auto;
+}
+.icon-hover_back-img {
+    margin-top:18px;
+    margin-left:20px;
+    display: inline-block;
+}
+.name{  
+    color: #212121;
+    font-size: 22px;
+    font-weight: 700;
     
+    margin: 19px auto 0;
+    text-align: center;
+}
+.details {
+    /* Style for "Seat and b" */
+padding: 20px 32px 0 32px;
+height: 33px;
+color: #6c6c6c;
+text-align: center;
+font-size: 14px;
+font-weight: 300;
+display:inline-block;
+overflow: hidden;
+}
+
+.promo-product {
+    /* Style for "promo-prod" */
+width: 1366px;
+height: 683px;
+margin-top:120px;
+}
+.promo-content-1 {
+    background-image: url(../img/promo-img1.jpg);      
+    width: 683px;
+    height: 683px;
+    float:left;
+    
+}
+.promo-content-2 {
+    background-image: url(../img/promo-img.jpg);      
+    width: 683px;
+    height: 683px;   
+    float:right;
+}
+.promo-product_tag {
+    color: #1e88e5;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 38px;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    padding-top: 228px;
+    padding-left:52px;
+}
+.promo-product_name {  
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+    padding-left:52px;
+    
+}
+.promo-product_details {   
+width: 374px;
+height: 36px;
+color: #6c6c6c;
+font-size: 14px;
+font-weight: 300;
+overflow:hidden;
+margin-left:52px;
+text-align: left;
+margin-top:10px;
+/*line-height: 24.04px;*/
+
+
+  
+
+  
+    font-weight: 300; 
+    line-height: 18px;
+
+}
+.btn-hover 
+{
+    width: 212px;
+    height: 46px;
+box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+border-radius: 23px;
+background-color: #ffffff;
+margin-left:52px;
+margin-top:34px;
+position:relative;
+}
+
+.btn-hover-1 
+{
+    width: 212px;
+    height: 46px;
+box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+border-radius: 23px;
+background-color: #ffffff;
+margin-left:98px;
+margin-top:34px;
+position:relative;
+}
+.btn-hover_p {
+    /* Style for "Order Us" */
+text-decoration: none;
+color: #212121;
+font-size: 18px;
+font-weight: 700;
+line-height: 24.04px;
+text-transform: uppercase;
+/* Text style for "Order Us" */
+letter-spacing: 3.6px;
+text-align: center;
+margin-left:31px;
+margin-top:12px;
+position:absolute;
+float:left;
+display:inline-block;
+
+}
+.btn-hover_img {
+    
+    position:absolute;
+    margin-left:14px;
+float:left;
+display:inline-block;
+    
+}
+.trending-products_title {   
+    color: #212121;
+    font-size: 36px;
+    font-weight: 700;
+}
+.trending-products-title {
+    
+    float:left;
+}
+.trending-products {
+/* Style for "trending-p" */
+width: 1171px;
+height: 869px;
+margin: 119px auto 0 auto;
+}
+.products {
+    padding-top:99px;
+}
+.product-11 {
+    background-image: url(../img/product-11.jpg);
+    width: 370px;
+    height: 370px;
+    float:left;    
+}
+.product-21 {
+    background-image: url(../img/product-21.jpg);
+    width: 370px;
+    height: 370px;
+    float:left;  
+    margin:0 30px 0 30px;
+}
+.product-31 {
+    background-image: url(../img/product-31.jpg);
+    width: 370px;
+    height: 370px;
+    float:right;
+}
+.product-41 {
+    background-image: url(../img/product-41.jpg);
+    width: 370px;
+    height: 370px;
+    float:left;
+    margin-top:30px;
+}
+.product-5 {
+    background-image: url(../img/product-5.jpg);
+    width: 370px;
+    height: 370px;
+    float:left;
+    margin:30px 30px 0 30px;
+}
+.product-6 {
+    background-image: url(../img/product-6.jpg);
+    width: 370px;
+    height: 370px;
+    float:right;
+    margin-top: 30px;
+}
+.hot-deals {
+    
+width: 1366px;
+height: 800px;
+background-image: url(../img/slider.jpg);
+margin-top:120px;
+position:relative;
+}
+.exclusive-product {
+    /* Style for "exclusive-" */
+width: 1170px;
+height: 570px;
+margin: 120px auto 0 auto;
+}
+.product-1-lg {
+    background-image: url(../img/product-1-lg.jpg);
+    float:left;
+    /* Style for "product-1-" */
+width: 570px;
+height: 570px;
+}
+.exclusive-product_details {
+    width: 332px;
+height: 36px;
+color: #6c6c6c;
+font-size: 14px;
+font-weight: 300;
+overflow:hidden;
+margin-left:52px;
+text-align: left;
+margin-top:10px;
+}
+.product-2-sm {
+    background-image: url(../img/product-2-sm.jpg);
+    width: 270px;
+    height: 270px;
+    float:right;
+    margin-right: 30px;
+}
+.product-3-sm {
+    background-image: url(../img/product-3-sm.jpg);
+    width: 270px;
+    height: 270px;
+    float:right;
+}
+.product-4-sm {
+    background-image: url(../img/product-4-sm.jpg);
+    width: 270px;
+    height: 270px;
+    float:right;
+    margin: 30px 30px 0 30px;
+}
+.product-5-sm {
+    background-image: url(../img/product-5-sm.jpg);
+    width: 270px;
+    height: 270px;
+    float:right;
+    margin-top: 30px;
+    
+}
+.mobile-app {
+    /* Style for "back-img" */
+width: 1366px;
+height: 516px;
+background-image: url(../img/back-img.jpg);
+margin-top: 120px;
+}
+.mobile-app_content
+{
+    /* Style for "content" */
+width: 415px;
+padding-top: 125px;
+margin-left: 98px;
+}
+.mobile-app_tag {
+width: 226px;
+height: 13px;
+color: #6c6c6c;
+font-size: 18px;
+font-weight: 700;
+line-height: 48px;
+text-transform: uppercase;
+letter-spacing: 1.8px;
+margin-bottom: 22px;
+}
+.mobile-app_name {
+    /* Style for "Find. Foll" */
+width: 505px;
+height: 116px;
+color: #212121;
+font-family: "Montserrat - Thin";
+font-size: 62px;
+font-weight: 400;
+line-height: 72px;
+text-transform: uppercase;
+margin-bottom: 26px;
+}
+.mobile-app_details {
+    /* Style for "Save your" */
+width: 511px;
+height: 21px;
+color: #6c6c6c;
+font-size: 22px;
+font-weight: 300;
+line-height: 24px;
+}
+.mobile-app_app-store-link {
+    
+    width: 135px;
+    height: 40px;
+    float:left;
+    margin-top: 33px;
+    display: inline-block;
+}
+.mobile-app_google-play-link{
+    width: 135px;
+    height: 40px;
+    display: inline-block;
+    margin-top: 33px;
+    margin-left: 10px;
+}
+footer {   
+    width: 1366px;
+    height: 384px;
+    background-color: #f7f7f7;
+    
+}
+.footer_1 {
+    margin-left: 97px;
+    margin-top:120px;
+    width: 221px;
+    height: 139px;
+    float:left;
+}
+.footer_1_h1 {  
+width: 229px;
+height: 13px;
+color: #6c6c6c;
+font-family: Montserrat;
+font-size: 18px;
+font-weight: 700;
+line-height: 24px;
+text-transform: uppercase;
+/* Text style for "C, ontact" */
+letter-spacing: 0.6px;
+margin-bottom:24px;
+}
+.footer_1_ul{
+    list-style: none;
+    /* Style for "132A Bridg" */
+width: 221px;
+height: 102px;
+color: #212121;
+font-family: Montserrat;
+font-size: 12px;
+font-weight: 700;
+line-height: 22px;
+}
+.footer_1_li {
+    margin-bottom: 20px;
+}
+.footer_2 {
+    /* Style for "2" */
+width: 422px;
+height: 101px;
+float:left;
+margin-left: 81px;
+    margin-top:120px;
+}
+.footer_2_ul {
+    list-style: none;   
+
+/* Style for "Sales term" */
+width: 132px;
+height: 62px;
+
+
+}
+.footer_2_a{
+    text-decoration: none;
+    color: #212121;    
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    display:inline-block;
+    /* Text style for "Sales term" */
+   
+}
+.footer_2_2, .footer_2_1{
+    float:left;
+    white-space: nowrap;
+}
+.footer_2_2{
+    /* Style for "Architect" */
+width: 187px;
+height: 63px;
+float:left;
+margin-left:103px;
+}
+.footer_3 {
+    float:left;
+    margin-top: 120px;
+    margin-left:78px;
+}
+.footer_3_p {
+    /* Style for "Suscribe t" */
+width: 363px;
+height: 36px;
+color: #212121;
+font-size: 12px;
+font-weight: 700;
+line-height: 22px;
+}
+.Feedback_form {
+    float:left;
+    /* Style for "input" */
+width: 370px;
+height: 48px;
+border: 1px solid #d9dee1;
+background-color: #ffffff;
+margin-top:26px;
+position:relative;
+}
+#Feedback_form_email
+{
+    /* Style for "your email" */
+width: 128px;
+height: 14px;
+color: #6c6c6c;
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 300;
+line-height: 22px;
+width: 370px;
+padding-left:19px;
+padding-top:17px;
+border:none;
+float:left;
+
+}
+.Feedback_form_img {
+    width: 21px;
+    height: 17px;    
+    margin:auto;
+    display:block;
+    float:right;
+    margin-top:16px;
+    margin-left:340px;
+    position:absolute;
+}
+#Feedback_form_img_1
+{
+    
+    
+}
+.footer-copyright {
+    padding-top:325px;
+    margin-left:98px;
+    margin-right: 97px;
+}
+.footer-copyright-p {
+    display:inline-block;
+    /* Style for "© Copyrigh" */
+
+color: #6c6c6c;
+
+font-size: 12px;
+font-weight: 700;
+line-height: 26px;
+text-transform: uppercase;
+/* Text style for "©,  Copyri" */
+letter-spacing: 0.6px;
+float:left;
+}
+.social {
+    
+    float:left;
+    background-image: url(../img/social-links.png);
+    width: 129px;
+    height: 28px;
+    color: #6c6c6c;
+    margin-left:158px;
+}
+.Terms {    
+    float:right;    
+}
+.Terms-ul {
+    list-style: none;   
+    color: #6c6c6c;
+    font-size: 12px;
+    font-weight: 700;   
+}
+.footer_terms_link {   
+    text-transform: uppercase;
+    text-decoration: none;    
+    color: #6c6c6c;
+    
+}
+.footer_terms{    
+    display:inline-block;
+    letter-spacing: 0.6px;
+    color: #6c6c6c;   
+}
+.Hot-deal {
+    /* Style for "Hot deal" */
+width: 105px;
+height: 13px;
+margin-left:99px;
+font-size: 18px;
+font-weight: 700;
+line-height: 48px;
+text-transform: uppercase;
+/* Text style for "Hot deal" */
+color: #e53935;
+letter-spacing: 1.8px;
+display:inline;
+}
+a:hover{
+    text-decoration: none;
+}
+.col-img {
+    
+}
+.header-contacts {
+    display:inline-block;
+    /* Style for "Contact Us" */
+color: #212121;
+font-size: 62px;
+font-weight: 200;
+line-height: 72px;
+margin-left:101px;
+margin-top: 125px;
+}
+.hero {
+    /* Style for "hero-back" */
+width: 1366px;
+height: 360px;
+background-color: #f5f5f5;
+}
+.col-city{
+    /* Style for "California" */
+
+color: #212121;
+font-size: 22px;
+font-weight: 700;
+
+text-transform: uppercase;
+margin-top: 34px;
+}
+.col-contacts {
+    padding-top:23px;
+}
+.col-phone-number {
+    
+/* Text style for "Phone: , E" */
+font-family: "Montserrat - Bold";
+font-weight: 700;    
+}
+.col-phone{
+    /* Style for "Phone: 190" */
+
+color: #6c6c6c;
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 700;
+}
+.col-phone-adress{
+    font-size: 12px;
+line-height: 20px;
+font-weight:400;
+color: #212121;
+
 }
